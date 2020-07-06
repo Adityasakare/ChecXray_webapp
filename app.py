@@ -45,7 +45,7 @@ def create_cam(output_dir, image_source, model, class_names):
     res_exception = True
     img_ori = cv2.imread(image_source)
     #file_name=image_source[-16:]
-    _,file_name=os.path.split(image_source)
+    file_name=os.path.split(image_source)
     output_path = os.path.join(output_dir, f"{file_name}")
 
     img_transformed = load_image(image_source)
